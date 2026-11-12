@@ -1,0 +1,72 @@
+<div data-history-section>
+<template data-history-slot="summary">
+<p>Best pris i dag er kr <span class="font-semibold">2 799</span></p>
+<p>Billigste pris de siste tre månedene er kr <span class="font-semibold">2 799</span></p>
+</template>
+<template data-history-slot="ntb">
+<section class="app-ntb-box" aria-labelledby="ntb-heading">
+<h2 id="ntb-heading" class="default-h2 pl-2">Er det riktig tidspunkt å kjøpe?</h2>
+<div class="flex flex-col items-center gap-1 p-2">
+<div class="relative w-full mt-12 mb-2" data-ntb-bar data-tooltip-current="Dagens pris: 2 799">
+<p class="sr-only">Prisindikator: Dagens pris 2 799,-. Nå er det god pris 🥳. God pris: 2 799 – 2 990. OK: 2 990 – 3 490. Kanskje: 3 490 – 3 519.</p>
+<div aria-hidden="true">
+<div
+class="absolute -top-10 whitespace-nowrap rounded border border-black/40 bg-palette4-100 px-1 py-0.5 text-sm text-black shadow-sm"
+style="left: 0%; transform: translateX(-0%)"
+>Dagens pris 2 799,-</div>
+<div class="relative h-3.5 w-full rounded-lg bg-gradient-to-r from-[#22c55e] via-[#facc15] to-[#ef4444]">
+<span class="absolute top-0 h-full w-px bg-white/50" style="left: 33.333333333333%"></span>
+<span class="absolute top-0 h-full w-px bg-white/50" style="left: 66.666666666667%"></span>
+<span
+class="absolute top-1/2 h-5 w-5 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-palette4-950 bg-white"
+style="left: 0%"
+></span>
+<div class="absolute inset-0 flex">
+<span class="h-full flex-1 cursor-help" data-ntb-zone="God pris: 2 799 – 2 990"></span>
+<span class="h-full flex-1 cursor-help" data-ntb-zone="OK: 2 990 – 3 490"></span>
+<span class="h-full flex-1 cursor-help" data-ntb-zone="Kanskje: 3 490 – 3 519"></span>
+</div>
+</div>
+<div class="mt-2 grid grid-cols-3 text-center text-sm opacity-70">
+<span>God pris</span>
+<span>OK</span>
+<span>Kanskje</span>
+</div>
+<div class="pointer-events-none absolute z-10 hidden rounded opacity-80 bg-palette4-950 px-2 py-1 text-base leading-normal text-white dark:bg-palette4-100 dark:text-black" data-ntb-tooltip></div>
+</div>
+</div>
+<div class="w-full">
+<span class="text-base">Nå er det god pris 🥳</span>
+<div class="justify-self-end">
+<button type="button" class="p-0 text-sm flex gap-2 underline text-neutral-900 underline-offset-4 hover:underline dark:text-neutral-50" aria-haspopup="dialog" aria-controls="ntb-dialog" data-ntb-explain>
+Hvordan funker det?
+</button>
+</div>
+</div>
+</div>
+<dialog
+id="ntb-dialog"
+class="m-auto p-0 bg-neutral-50 dark:bg-zinc-900 dark:text-white shadow-lg sm:w-full w-screen sm:max-w-md backdrop:bg-black/50 backdrop:backdrop-blur-xs"
+aria-labelledby="ntb-dialog-title"
+data-simple-dialog
+>
+<div class="p-8">
+<div class="flex gap-2 mb-6 items-center justify-between">
+<h2 id="ntb-dialog-title" class="text-3xl mb-0">Hvordan funker det?</h2>
+<button type="button" class="default-button-transition app-button__ghost inline-flex items-center justify-center h-6 w-6" aria-label="Lukk" data-dialog-close>
+<svg class="h-6 w-6" aria-hidden="true"><use href="#icon-cross" /></svg>
+</button>
+</div>
+<p>Vi sammenligner dagens laveste pris med prisene for samme produkt de siste 90 dagene.</p>
+<div class="flex flex-col gap-2 mt-2">
+<div><span class="py-0.5 px-1 bg-green-500 text-black">grønt (god pris)</span> = <span>dagens pris befinner seg i bunnen av historikken</span></div>
+<div><span class="py-0.5 px-1 bg-yellow-400 text-black">gult (ok)</span> = prisen befinner seg midt på historikken</div>
+<div><span class="py-0.5 px-1 bg-red-400 text-black">rødt (kanskje)</span> = prisen er høyt oppe i historikken →</div>
+<div class="text-sm mt-2">Si gjerne hei på post@godpris.no hvis du vil vite mer eller har innspill til hvordan vi kan forbedre algoritmen.</div>
+</div>
+</div>
+</dialog>
+</section>
+</template>
+<script type="application/json" data-history-data>{"history":[["2026-06-14","3519.00","Netonnet"],["2026-06-15","2990.00","Komplett"],["2026-06-16","2990.00","Komplett"],["2026-06-17","2990.00","Komplett"],["2026-06-18","2990.00","Netonnet"],["2026-06-19","2990.00","Komplett"],["2026-06-20","2990.00","Komplett"],["2026-06-21","2990.00","Komplett"],["2026-06-22","2990.00","Netonnet"],["2026-06-23","2990.00","Netonnet"],["2026-06-24","2990.00","Komplett"],["2026-06-25","2990.00","Netonnet"],["2026-06-26","2990.00","Netonnet"],["2026-06-27","2990.00","Komplett"],["2026-06-28","2990.00","Komplett"],["2026-06-29","2990.00","Netonnet"],["2026-06-30","2990.00","Netonnet"],["2026-07-01","2990.00","Komplett"],["2026-07-02","2990.00","Komplett"],["2026-07-03","2990.00","Netonnet"],["2026-07-04","2990.00","Netonnet"],["2026-07-05","2990.00","Komplett"],["2026-07-06","2990.00","Netonnet"],["2026-07-07","3490.00","Jernia"],["2026-07-08","3490.00","Jernia"],["2026-07-09","3490.00","Jernia"],["2026-07-10","3490.00","Jernia"],["2026-07-11","3490.00","Jernia"],["2026-07-12","3490.00","Coop Obs Bygg"],["2026-07-13","3519.00","Netonnet"],["2026-07-14","3490.00","Jernia"],["2026-07-15","3490.00","Jernia"],["2026-07-16","3490.00","Coop Obs Bygg"],["2026-07-17","3490.00","Jernia"],["2026-07-18","3490.00","Jernia"],["2026-07-19","3490.00","Coop Obs Bygg"],["2026-07-20","3490.00","Jernia"],["2026-07-21","3490.00","Coop Obs Bygg"],["2026-07-22","3490.00","Jernia"],["2026-07-23","3490.00","Jernia"],["2026-07-24","3490.00","Coop Obs Bygg"],["2026-07-25","3490.00","Coop Obs Bygg"],["2026-07-26","3519.00","Komplett"],["2026-07-27","3490.00","Jernia"],["2026-07-28","3490.00","Jernia"],["2026-07-29","3490.00","Jernia"],["2026-07-30","3490.00","Coop Obs Bygg"],["2026-07-31","3490.00","Jernia"],["2026-08-01","3490.00","Jernia"],["2026-08-02","3490.00","Coop Obs Bygg"],["2026-08-03","3490.00","Jernia"],["2026-08-04","3490.00","Coop Obs Bygg"],["2026-08-05","3490.00","Jernia"],["2026-08-06","3490.00","Jernia"],["2026-08-07","3490.00","Coop Obs Bygg"],["2026-08-08","3490.00","Jernia"],["2026-08-09","3490.00","Coop Obs Bygg"],["2026-08-10","3490.00","Coop Obs Bygg"],["2026-08-11","3490.00","Jernia"],["2026-08-12","3490.00","Jernia"],["2026-08-13","3490.00","Jernia"],["2026-08-14","3490.00","Coop Obs Bygg"],["2026-08-15","3490.00","Coop Obs Bygg"],["2026-08-16","3490.00","Coop Obs Bygg"],["2026-08-17","3490.00","Jernia"],["2026-08-18","3490.00","Coop Obs Bygg"],["2026-08-19","3490.00","Jernia"],["2026-08-20","3490.00","Jernia"],["2026-08-21","3490.00","Coop Obs Bygg"],["2026-08-22","3490.00","Jernia"],["2026-08-23","3490.00","Coop Obs Bygg"],["2026-08-24","3490.00","Coop Obs Bygg"],["2026-08-25","3490.00","Coop Obs Bygg"],["2026-08-26","3490.00","Jernia"],["2026-08-27","3490.00","Jernia"],["2026-08-28","3490.00","Coop Obs Bygg"],["2026-08-29","3490.00","Coop Obs Bygg"],["2026-08-30","3490.00","Coop Obs Bygg"],["2026-08-31","3490.00","Jernia"],["2026-09-01","3490.00","Coop Obs Bygg"],["2026-09-02","3490.00","Jernia"],["2026-09-03","3490.00","Coop Obs Bygg"],["2026-09-04","3490.00","Jernia"],["2026-09-05","3490.00","Coop Obs Bygg"],["2026-09-06","3490.00","Coop Obs Bygg"],["2026-09-07","2990.00","Skousen"],["2026-09-08","2990.00","Skousen"],["2026-09-09","2990.00","Skousen"],["2026-09-10","2990.00","Skousen"],["2026-09-11","2990.00","Skousen"],["2026-09-12","2990.00","Skousen"],["2026-09-13","2990.00","Skousen"],["2026-09-14","2990.00","Skousen"],["2026-09-15","2990.00","Skousen"],["2026-09-16","2990.00","Skousen"],["2026-09-17","2990.00","Skousen"],["2026-09-18","2990.00","Skousen"],["2026-09-19","2990.00","Skousen"],["2026-09-20","2990.00","Skousen"],["2026-09-21","2990.00","Skousen"],["2026-09-22","2990.00","Skousen"],["2026-09-23","2990.00","Skousen"],["2026-09-24","2990.00","Skousen"],["2026-09-25","2990.00","Komplett"],["2026-09-26","2990.00","Skousen"],["2026-09-27","2990.00","Skousen"],["2026-09-28","2990.00","Netonnet"],["2026-09-29","2990.00","Komplett"],["2026-09-30","2990.00","Komplett"],["2026-10-01","2990.00","Komplett"],["2026-10-02","2990.00","Whiteaway"],["2026-10-03","2990.00","Komplett"],["2026-10-04","2990.00","Komplett"],["2026-10-05","2990.00","Komplett"],["2026-10-06","2990.00","Netonnet"],["2026-10-07","2990.00","Komplett"],["2026-10-08","2990.00","Whiteaway"],["2026-10-09","2990.00","Elkj\u00f8p"],["2026-10-10","2990.00","Komplett"],["2026-10-11","2990.00","Elkj\u00f8p"],["2026-10-12","2990.00","Komplett"],["2026-10-13","2990.00","Netonnet"],["2026-10-14","2990.00","Elkj\u00f8p"],["2026-10-15","2990.00","Elkj\u00f8p"],["2026-10-16","2990.00","Elkj\u00f8p"],["2026-10-17","2990.00","Elkj\u00f8p"],["2026-10-18","2990.00","Elkj\u00f8p"],["2026-10-19","2990.00","Netonnet"],["2026-10-20","3490.00","Jernia"],["2026-10-21","3490.00","Jernia"],["2026-10-22","3490.00","Jernia"],["2026-10-23","3490.00","Jernia"],["2026-10-24","3490.00","Jernia"],["2026-10-25","3519.00","Komplett"],["2026-10-26","3490.00","Jernia"],["2026-10-27","3490.00","Jernia"],["2026-10-28","3490.00","Jernia"],["2026-10-29","3490.00","Jernia"],["2026-10-30","3519.00","Komplett"],["2026-10-31","3519.00","Komplett"],["2026-11-01","3519.00","Komplett"],["2026-11-02","3519.00","Komplett"],["2026-11-03","3519.00","Netonnet"],["2026-11-04","3519.00","Netonnet"],["2026-11-05","3490.00","Jernia"],["2026-11-06","3490.00","Jernia"],["2026-11-07","3490.00","Jernia"],["2026-11-08","3490.00","Jernia"],["2026-11-09","2799.00","Skousen"],["2026-11-10","2799.00","Skousen"],["2026-11-11",2799,"Skousen"]],"meta":{"price_min":"2799.00","price_max":"3519.00","created_min":"2026-06-14","created_max":"2026-11-11","price_min_last_90_days":"2799.00","feature_nice_time_to_buy":true,"price_percentiles":{"start":[2799,2990],"end":[3490,3519]}}}</script>
+</div>

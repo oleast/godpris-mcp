@@ -1,0 +1,16 @@
+services:
+  godpris-mcp:
+    # Replace OWNER with the GitHub owner (lowercase) of the repository.
+    image: ghcr.io/OWNER/godpris-mcp:latest
+    ports:
+      - "3333:3333"
+    volumes:
+      - godpris-data:/data
+    restart: unless-stopped
+    environment:
+      GODPRIS_RPS: "1"
+      # GODPRIS_ALLOWED_HOSTS: "mcp.example.com"
+      # GODPRIS_ALLOWED_ORIGINS: "http://localhost:6274"  # browser clients (MCP Inspector)
+
+volumes:
+  godpris-data:

@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="nb" data-notifications-label="Varsler" data-link-copied="Lenke kopiert">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://www.googletagmanager.com" />
+<link rel="preconnect" href="https://www.google-analytics.com" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- Meta -->
+<link rel="icon" type="image/svg+xml" href="/images/brand/godpris-favicon.svg">
+<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" type="image/x-icon">
+<link rel="icon" href="/images/brand/godpris-favicon-128.png" sizes="128x128" type="image/png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/brand/godpris-favicon-180.png">
+<link rel="manifest" href="/manifest.json" />
+<link rel="search" type="application/opensearchdescription+xml" title="Godpris" href="/opensearch.xml">
+<meta property="og:site_name" content="Godpris" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="nb_NO" />
+<meta name="theme-color" content="#170132" />
+<!-- Analytics: queues and consent defaults, so events and consent can be recorded right away; the
+libraries themselves load later (resources/js/blade/analytics.ts) -->
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    // Until the visitor accepts (resources/js/blade/consent.ts updates Google, Bing and Clarity)
+    gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied'
+    });
+    window.uetq = window.uetq || [];
+    window.uetq.push('consent', 'default', { 'ad_storage': 'denied' });
+    window.clarity = window.clarity || function () { (window.clarity.q = window.clarity.q || []).push(arguments) };
+</script>
+<title>Sammenlign produkt</title>
+<meta name="description" content="ferdig">
+<meta property="og:description" content="ferdig" />
+<meta property="og:title" content="Sammenlign produkt" />
+<link rel="canonical" href="https://godpris.no/sammenlign">
+<meta property="og:url" content="https://godpris.no/sammenlign" />
+<script type="application/json" id="site-config">{"routes":{"user":"https:\/\/godpris.no\/me\/api\/user","logout":"https:\/\/godpris.no\/me\/api\/user\/logout","search":"https:\/\/godpris.no\/sok","autocomplete":"https:\/\/godpris.no\/api\/product\/search","product":"https:\/\/godpris.no\/produkt\/__ID__","recentItems":"https:\/\/godpris.no\/api\/product\/recent-items","recentCategories":"https:\/\/godpris.no\/api\/carousel\/recent-categories","registerToken":"https:\/\/godpris.no\/me\/api\/user\/registertoken","unregisterToken":"https:\/\/godpris.no\/me\/api\/user\/unregistertoken"},"icons":{"sprite":"\/build\/assets\/sprite-f625c976.svg","inline":["magnifying-glass","hamburger","cross","chevron-down","chevron-up","heart","heart-filled","mixer-horizontal","view-grid","list"]},"analytics":{"ga4":"G-S02X2DGED4","google_ads":{"id":"AW-824478560","click_to_shop_label":"pY4nCJq-rqwZEOCWkokD","click_value":2.5,"currency":"NOK"},"bing_uet":"97148967","clarity":"qji55z1tob","go_domain":"go.godpris.no"}}</script>
+<link rel="preload" href="/build/assets/_Xms-HUzqDCFdgfMm4S9DQ-4ba7d3d0.woff2?no-inline" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="style" href="/build/assets/app-c5e267ab.css" /><link rel="modulepreload" as="script" href="/build/assets/blade-68132d1b.js" /><link rel="stylesheet" href="/build/assets/app-c5e267ab.css" /><script type="module" src="/build/assets/blade-68132d1b.js"></script>
+<meta property="og:image" content="https://godpris.no/images/brand/godpris-dark-600.png" />
+</head>
+<body class="font-sans antialiased">
+<script>
+    const root = window.document.documentElement;
+    let theme = window.matchMedia(
+            "(prefers-color-scheme: dark)",
+        ).matches ?
+        "dark" :
+        "light";
+    try {
+        const userTheme = (typeof window !== "undefined" && localStorage.getItem("ui-theme"))
+        if (userTheme === 'dark' || userTheme === 'light') {
+            theme = userTheme
+        }
+    } catch (e) {}
+
+    root.classList.add(theme);
+</script>
+<a href="#main-content" class="skip-link">Hopp til innhold</a>
+<header class="app-header-wrapper" data-site-header>
+<div class="app-header">
+<div class="inner">
+<div class="logo-section">
+<a href="/" class="no-underline">
+<span class="logo">
+<img
+loading="eager"
+src="/images/brand/godpris-nobg.svg"
+alt="Godpris - Sammenlign priser og gjør gode kjøp"
+class="img"
+width="198"
+height="66"
+/>
+</span>
+</a>
+</div>
+<div class="search-section">
+<div class="wrapper">
+<div class="relative w-full"
+data-search-bar
+data-i18n="{&quot;showAll&quot;:&quot;Vis alle resultatene&quot;,&quot;seeInCategory&quot;:&quot;Se i kategori&quot;,&quot;noPrice&quot;:&quot;Ingen pris&quot;,&quot;imageOf&quot;:&quot;Bilde av :title&quot;,&quot;recentSearches&quot;:&quot;Tidligere s\u00f8k&quot;,&quot;suggestions&quot;:&quot;S\u00f8keforslag&quot;}"
+>
+<form
+role="search"
+aria-label="Skjema for søk"
+action="https://godpris.no/sok"
+method="get"
+class="app-searchbar "
+data-search-form
+>
+<div class="wrapper z-10 h-14 rounded-br-md rounded-bl-md" data-search-wrapper>
+<input
+aria-label="Søkeboks"
+role="combobox"
+aria-autocomplete="list"
+aria-expanded="false"
+aria-controls="search-suggestions-6af432f73bce5"
+type="search"
+name="q"
+autocomplete="off"
+class="input"
+placeholder="Bare gode priser"
+value=""
+data-search-input
+/>
+<button class="submit">
+<svg class="text-zinc-200" width="15" height="15" aria-hidden="true"><use href="#icon-magnifying-glass" /></svg>
+<span>Søk</span>
+</button>
+</div>
+</form>
+<div id="search-suggestions-6af432f73bce5" data-search-results></div>
+<div aria-hidden="true" class="app-backdrop pointer-events-auto z-[1] hidden" data-search-overlay></div>
+</div>
+</div>
+</div>
+<div class="menu-section">
+<div class="links">
+<a
+href="https://godpris.no/tilbud"
+class="app-header__offers-link gtm-page-link-offer"
+>Tilbud</a>
+</div>
+<div class="mobile-search">
+<button
+type="button"
+class="default-button-transition app-button__icon--dark hover:bg-transparent p-1"
+data-mobile-search-toggle
+aria-expanded="false"
+aria-controls="mobile-search"
+data-label-show="Vis søkeboks"
+data-label-hide="Skjul søkeboks"
+aria-label="Vis søkeboks"
+>
+<svg class="text-white w-10 h-10" aria-hidden="true" data-icon-closed><use href="#icon-magnifying-glass" /></svg>
+<svg class="text-white w-10 h-10 hidden" aria-hidden="true" data-icon-open><use href="#icon-chevron-down" /></svg>
+</button>
+</div>
+<div class="menu-button">
+<button
+type="button"
+class="default-button-transition app-button__icon--dark app-header__menu-button"
+data-megamenu-toggle
+aria-expanded="false"
+aria-controls="megamenu"
+data-label-open="Åpne meny"
+data-label-close="Lukk meny"
+aria-label="Åpne meny"
+>
+<svg class="h-12 w-12" aria-hidden="true" data-icon-closed><use href="#icon-hamburger" /></svg>
+<svg class="h-12 w-12 hidden" aria-hidden="true" data-icon-open><use href="#icon-cross" /></svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div id="mobile-search" class="md:hidden hidden" data-mobile-search>
+<div class="p-1.5 bg-palette4-1000 dark:bg-black">
+<div class="relative w-full"
+data-search-bar
+data-i18n="{&quot;showAll&quot;:&quot;Vis alle resultatene&quot;,&quot;seeInCategory&quot;:&quot;Se i kategori&quot;,&quot;noPrice&quot;:&quot;Ingen pris&quot;,&quot;imageOf&quot;:&quot;Bilde av :title&quot;,&quot;recentSearches&quot;:&quot;Tidligere s\u00f8k&quot;,&quot;suggestions&quot;:&quot;S\u00f8keforslag&quot;}"
+>
+<form
+role="search"
+aria-label="Skjema for søk"
+action="https://godpris.no/sok"
+method="get"
+class="app-searchbar "
+data-search-form
+>
+<div class="wrapper z-10 h-14 rounded-br-md rounded-bl-md" data-search-wrapper>
+<input
+aria-label="Søkeboks"
+role="combobox"
+aria-autocomplete="list"
+aria-expanded="false"
+aria-controls="search-suggestions-6af432f73bde6"
+type="search"
+name="q"
+autocomplete="off"
+class="input"
+placeholder="Bare gode priser"
+value=""
+data-search-input
+/>
+<button class="submit">
+<svg class="text-zinc-200" width="15" height="15" aria-hidden="true"><use href="#icon-magnifying-glass" /></svg>
+<span>Søk</span>
+</button>
+</div>
+</form>
+<div id="search-suggestions-6af432f73bde6" data-search-results></div>
+<div aria-hidden="true" class="app-backdrop pointer-events-auto z-[1] hidden" data-search-overlay></div>
+</div>
+</div>
+</div>
+<a href="https://godpris.no/tilbud/black-friday" title="Gå til Black Week!" class="event-banner gtm-eventbanner-blackweek">
+<picture>
+<source media="(min-width: 768px)" srcset="/images/static/events/event-banner-black-week.avif?cb=1" type="image/avif">
+<source media="(min-width: 768px)" srcset="/images/static/events/event-banner-black-week.png?cb=1">
+<source srcset="/images/static/events/event-banner-black-week-mobile.avif?cb=1" type="image/avif">
+<img
+src="/images/static/events/event-banner-black-week-mobile.png?cb=1"
+alt="Black Week er i gang – se tilbud"
+width="289"
+height="48"
+fetchpriority="low"
+/>
+</picture>
+</a>
+<div class="fixed top-0 left-0 bottom-0 right-0 hidden" aria-hidden="true" data-megamenu-backdrop></div>
+<nav
+id="megamenu"
+class="app-megamenu hidden transition transform duration-200 opacity-0 md:-translate-y-12 md:translate-x-0 translate-x-40"
+aria-label="Hovedmeny"
+aria-hidden="true"
+data-megamenu
+>
+<div class="container container-padding relative mt-4">
+<div class="content">
+<div class="submenu order-3 md:order-1 grow">
+<h4>Kategorier</h4>
+<ul
+aria-label="Lenker til kategorier"
+class="grid grid-cols-1 md:grid-cols-none md:grid-rows-6 md:grid-flow-col gap-2 md:gap-4"
+>
+<li class="flex gap-4 items-center">
+<a href="https://godpris.no/kategori/524" tabindex="-1" aria-hidden="true">
+<div class="w-6 h-6">
+<img
+alt="Kategori Mobil og nettbrett"
+src="/images/dynamic/348021/mFwnEjp8vJi4junMgXOte5p2JJfML5jdZlNwTha4.svg?p=md&amp;s=09360fa37fbecfc9243241a9be8f4c61"
+class="object-contain"
+loading="lazy"
+/>
+</div>
+</a>
+<a href="https://godpris.no/kategori/524">Mobil og nettbrett</a>
+</li>
+<li class="flex gap-4 items-center">
+<a href="https://godpris.no/kategori/523" tabindex="-1" aria-hidden="true">
+<div class="w-6 h-6">
+<img
+alt="Kategori Data"
+src="/images/dynamic/348565/gD6Tn5ZeX6bAf50Z9pSkcFfC12lbhnwqEkS7tNBj.svg?p=md&amp;s=f13272255f64a3337d6853da0eb6260c"
+class="object-contain"
+loading="lazy"
+/>
+</div>
+</a>
+<a href="https://godpris.no/kategori/523">Data</a>
+</li>
+<li class="flex gap-4 items-center">
+<a href="https://godpris.no/kategori/520" tabindex="-1" aria-hidden="true">
+<div class="w-6 h-6">
+<img
+alt="Kategori Klær og sko"
+src="/images/dynamic/381684/5T1Ar1JDctsu6SfJ8uiUuGgqg7FgOv92m7cfZ497.svg?p=md&amp;s=ecaaea5a8e9f7f06b02ef907bfa2ad9b"
+class="object-contain"
+loading="lazy"
+/>
+</div>
+</a>
+<a href="https://godpris.no/kategori/520">Klær og sko</a>
+</li>
+<li class="flex gap-4 items-center">
+<a href="https://godpris.no/kategori/881" tabindex="-1" aria-hidden="true">
+<div class="w-6 h-6">
+<img
+alt="Kategori Sport og friluftsliv"
+src="/images/dynamic/381704/ySs6DWNY23IpWlDcc4zPwXEFFMJvdqAOhx7bJxNr.svg?p=md&amp;s=abdd028be39c666422419b8537921bff"
+class="object-contain"
+loading="lazy"
+/>
+</div>
+</a>
+<a href="https://godpris.no/kategori/881">Sport og friluftsliv</a>
+</li>
+<li class="flex gap-4 items-center">
+<a href="https://godpris.no/kategori/448" tabindex="-1" aria-hidden="true">
+<div class="w-6 h-6">
+<img
+alt="Kategori Skjønnhet og helse"
+src="/images/dynamic/381714/ozMUmcpsP7rnBeNz3z8lILaaafUNnf1akfM48Gud.svg?p=md&amp;s=328587971b08c7d05118b4a834b1ce8b"
+class="object-contain"
+loading="lazy"
+/>
+</div>
+</a>
+<a href="https://godpris.no/kategori/448">Skjønnhet og helse</a>
+</li>
+<li class="flex gap-4 items-center">
+<a href="https://godpris.no/kategori/449" tabindex="-1" aria-hidden="true">
+<div class="w-6 h-6">
+<img
+alt="Kategori Hjem og husholdning"
+src="/images/dynamic/381739/46VdjIYttLXhkgzz8850GAWdxAMkr8I007dYKvFK.svg?p=md&amp;s=7a5bd2e7c4aff24abd33ff2364123045"
+class="object-contain"
+loading="lazy"
+/>
+</div>
+</a>
+<a href="https://godpris.no/kategori/449">Hjem og husholdning</a>
+</li>
+<li class="flex gap-4 items-center">
+<a href="https://godpris.no/kategori/459" tabindex="-1" aria-hidden="true">
+<div class="w-6 h-6">
+<img
+alt="Kategori Hobby"
+src="/images/dynamic/381756/LihDWvuiLqkd9nCZt08dPkRVzIe9GrKo6w4fcKpJ.svg?p=md&amp;s=579b1fcddf33a532b44053c4b6b587cd"
+class="object-contain"
+loading="lazy"
+/>
+</div>
+</a>
+<a href="https://godpris.no/kategori/459">Hobby</a>
+</li>
+<li class="flex gap-4 items-center">
+<a href="https://godpris.no/kategori/1721" tabindex="-1" aria-hidden="true">
+<div class="w-6 h-6">
+<img
+alt="Kategori Hage og utemiljø"
+src="/images/dynamic/381782/z095q8o7416JrL2fbQhjrBvkJqTeRf5kadVNwj4L.svg?p=md&amp;s=86480ebefce45eeda6db778d1574633c"
+class="object-contain"
+loading="lazy"
+/>
+</div>
+</a>
+<a href="https://godpris.no/kategori/1721">Hage og utemiljø</a>
+</li>
+<li class="flex gap-4 items-center">
+<a href="https://godpris.no/kategori/1" tabindex="-1" aria-hidden="true">
+<div class="w-6 h-6">
+<img
+alt="Kategori Dagligvarer"
+src="/images/dynamic/8482435/e254f81911.png?p=md&amp;s=1475c2eec061e88eb855ceaa55ba781c"
+class="object-contain"
+loading="lazy"
+/>
+</div>
+</a>
+<a href="https://godpris.no/kategori/1">Dagligvarer</a>
+</li>
+<li class="flex gap-4 items-center">
+<a href="https://godpris.no/kategori/1337" tabindex="-1" aria-hidden="true">
+<div class="w-6 h-6">
+<img
+alt="Kategori Gaming"
+src="/images/dynamic/381851/UiditC8sU5gC5VbbdfeQVuNlFw1IBn7m3idNJCCb.svg?p=md&amp;s=d6816739411d4b159234b4b5407e190c"
+class="object-contain"
+loading="lazy"
+/>
+</div>
+</a>
+<a href="https://godpris.no/kategori/1337">Gaming</a>
+</li>
+<li class="flex gap-4 items-center">
+<a href="https://godpris.no/kategori/1219" tabindex="-1" aria-hidden="true">
+<div class="w-6 h-6">
+<img
+alt="Kategori Hvitevarer"
+src="/images/dynamic/381832/q0BdGuWYh2tsIYvmwIGoPLmaR7tBYyXGhiQ5cU83.svg?p=md&amp;s=07a4dc7392c426987d3935e8c862b41e"
+class="object-contain"
+loading="lazy"
+/>
+</div>
+</a>
+<a href="https://godpris.no/kategori/1219">Hvitevarer</a>
+</li>
+<li class="flex gap-4 items-center">
+<a href="https://godpris.no/kategori/1605" tabindex="-1" aria-hidden="true">
+<div class="w-6 h-6">
+<img
+alt="Kategori Bygg og verktøy"
+src="/images/dynamic/381805/EH2THPqU296Gm5ckTMpirOrmMX9jNcZngLeGeAkZ.svg?p=md&amp;s=4407647e82e937e90bcd73c46ba5084c"
+class="object-contain"
+loading="lazy"
+/>
+</div>
+</a>
+<a href="https://godpris.no/kategori/1605">Bygg og verktøy</a>
+</li>
+<li class="flex gap-4 items-center">
+<a href="https://godpris.no/kategori/1237" tabindex="-1" aria-hidden="true">
+<div class="w-6 h-6">
+<img
+alt="Kategori Foto og video"
+src="/images/dynamic/1273062/dceb56397a.svg?p=md&amp;s=e4d0eb5f0d8beb23d2050e28bb19afa1"
+class="object-contain"
+loading="lazy"
+/>
+</div>
+</a>
+<a href="https://godpris.no/kategori/1237">Foto og video</a>
+</li>
+<li class="flex gap-4 items-center">
+<a href="https://godpris.no/kategori/1259" tabindex="-1" aria-hidden="true">
+<div class="w-6 h-6">
+<img
+alt="Kategori Foreldre og barn"
+src="/images/dynamic/381864/Y8xDbhhyatcAEpAccKTFlXxsZANdwboGJS1EUsXF.svg?p=md&amp;s=51e7ac8552408289b69c5288cde12246"
+class="object-contain"
+loading="lazy"
+/>
+</div>
+</a>
+<a href="https://godpris.no/kategori/1259">Foreldre og barn</a>
+</li>
+<li class="flex gap-4 items-center">
+<a href="https://godpris.no/kategori/2376" tabindex="-1" aria-hidden="true">
+<div class="w-6 h-6">
+<img
+alt="Kategori Kjøretøy"
+src="/images/dynamic/5188733/8ecd68239c.svg?p=md&amp;s=585f3a1f6318bb2f1e72d79279fb1d54"
+class="object-contain"
+loading="lazy"
+/>
+</div>
+</a>
+<a href="https://godpris.no/kategori/2376">Kjøretøy</a>
+</li>
+<li class="flex gap-4 items-center">
+<a href="https://godpris.no/kategori/835" tabindex="-1" aria-hidden="true">
+<div class="w-6 h-6">
+<img
+alt="Kategori Lyd og bilde"
+src="/images/dynamic/381843/cq4ePOb5vxEejF9Ryiv3gRm0NYn1MHtnk1upK5W9.svg?p=md&amp;s=c3a9f1ad0af8a62dcc995052cc53045f"
+class="object-contain"
+loading="lazy"
+/>
+</div>
+</a>
+<a href="https://godpris.no/kategori/835">Lyd og bilde</a>
+</li>
+<li class="flex gap-4 items-center">
+<a href="https://godpris.no/kategori/26" tabindex="-1" aria-hidden="true">
+<div class="w-6 h-6">
+<img
+alt="Kategori Dyreutstyr"
+src="/images/dynamic/4865093/8ebefbda5a.svg?p=md&amp;s=ede56f0660f965f75dee53afc8186c89"
+class="object-contain"
+loading="lazy"
+/>
+</div>
+</a>
+<a href="https://godpris.no/kategori/26">Dyreutstyr</a>
+</li>
+</ul>
+</div>
+<div class="flex flex-col order-1">
+<div class="submenu order-2">
+<h4>Aktuelt</h4>
+<ul aria-label="Lenker til våre tjenester">
+<li class="flex gap-4 items-center">
+<a href="https://godpris.no/tilbud/black-friday">Black Friday</a>
+</li>
+<li class="flex gap-4 items-center">
+<a href="https://godpris.no/tilbud/singles-day">Singles Day</a>
+</li>
+<li class="flex gap-4 items-center">
+<a href="https://godpris.no/gavetips/1">Julegavetips</a>
+</li>
+</ul>
+</div>
+<div class="submenu order-1 md:order-3">
+<h4 data-user-name data-default-text="Brukerkonto">Brukerkonto</h4>
+<ul aria-label="Lenker til brukerkonto">
+<li class="hidden" data-auth-show="user">
+<a href="https://godpris.no/me/profil" class="flex items-center gap-2">
+<svg class="h-6 w-6" aria-hidden="true"><use href="/build/assets/sprite-f625c976.svg#icon-home" /></svg>
+Min Godpris
+</a>
+</li>
+<li class="hidden" data-auth-show="user">
+<a href="https://godpris.no/me/profil/prisvarsler" class="flex items-center gap-2">
+<svg class="h-6 w-6" aria-hidden="true"><use href="/build/assets/sprite-f625c976.svg#icon-bell" /></svg>
+Mine prisvarsler
+</a>
+</li>
+<li class="hidden" data-auth-show="user">
+<a href="https://godpris.no/me/profil/lister" class="flex items-center gap-2">
+<svg class="h-6 w-6" aria-hidden="true"><use href="/build/assets/sprite-f625c976.svg#icon-heart-outline" /></svg>
+Mine lister
+</a>
+</li>
+<li class="hidden" data-auth-show="user">
+<a href="https://godpris.no/me/profil/lagrede-sok" class="flex items-center gap-2">
+<svg class="h-6 w-6" aria-hidden="true"><use href="#icon-magnifying-glass" /></svg>
+Lagrede søk
+</a>
+</li>
+<li class="hidden" data-auth-show="user">
+<a href="https://godpris.no/me/profil/innstillinger" class="flex items-center gap-2">
+<svg class="h-6 w-6" aria-hidden="true"><use href="/build/assets/sprite-f625c976.svg#icon-gear" /></svg>
+Innstillinger
+</a>
+</li>
+<li class="hidden" data-auth-show="user">
+<a href="https://godpris.no/me/profil/detaljer" class="flex items-center gap-2">
+<svg class="h-6 w-6" aria-hidden="true"><use href="/build/assets/sprite-f625c976.svg#icon-person" /></svg>
+Rediger profil
+</a>
+</li>
+<li>
+<div class="hidden" data-auth-show="user">
+<button type="button" class="default-button-transition app-button py-1.5 px-5 mt-6" data-logout>
+<span>Logg ut</span>
+</button>
+</div>
+<div class="flex flex-col gap-4" data-auth-show="guest">
+<a href="https://godpris.no/me/ny-bruker" class="underline">Bli bruker</a>
+<div>
+<a href="https://godpris.no/me/innlogging" class="default-button-transition app-button py-1.5 px-5 mt-2 inline-block no-underline">
+<span>Logg inn</span>
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="my-8">
+<div class="flex relative justify-start align-middle gap-2 text-black dark:text-white" role="group" aria-label="Fargetema" data-theme-toggle>
+<button type="button" title="Lyst tema" aria-label="Lyst tema" aria-pressed="false" class="default-button-transition app-button__outline size-icon" data-theme-value="light">
+<svg aria-hidden="true" class="h-[1.2rem] w-[1.2rem] rotate-0 dark:-rotate-90 opacity-40 dark:opacity-80"><use href="/build/assets/sprite-f625c976.svg#icon-sun" /></svg>
+</button>
+<button type="button" title="Mørkt tema" aria-label="Mørkt tema" aria-pressed="false" class="default-button-transition app-button__outline size-icon" data-theme-value="dark">
+<svg aria-hidden="true" class="absolute h-[1.2rem] w-[1.2rem] rotate-90 dark:rotate-0 opacity-40 dark:opacity-80"><use href="/build/assets/sprite-f625c976.svg#icon-moon" /></svg>
+</button>
+<button type="button" title="Bruk systeminnstilling" aria-label="Bruk systeminnstilling" aria-pressed="false" class="default-button-transition app-button__outline size-icon" data-theme-value="system">
+<svg aria-hidden="true" class="w-[1.2rem] h-[1.2rem] opacity-40 dark:opacity-80"><use href="/build/assets/sprite-f625c976.svg#icon-globe" /></svg>
+</button>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div id="main-content" tabindex="-1" class="app-main outline-none ">
+<nav class="app-breadcrumb" aria-label="Brødsmulesti">
+<ol class="app-breadcrumb__container">
+<li class="app-breadcrumb__item flex gap-1 items-center">
+<a href="https://godpris.no" >Forsiden</a>
+<span class="separator text-palette4" aria-hidden="true">&gt;</span>
+</li>
+<li class="app-breadcrumb__item flex gap-1 items-center">
+<a href="https://godpris.no/sammenlign"  aria-current="page" >Sammenlign produkter</a>
+</li>
+</ol>
+</nav>
+<main class="compare-page" data-swap-root data-compare-page data-ids="794250,1588920" data-compare-url="https://godpris.no/sammenlign">
+<div class="page-middle container">
+<h1 class="sr-only">Sammenlign produkter</h1>
+<div class="w-full p-2 md:pl-0">
+<div class="flex flex-col mb-4 relative" data-compare-search>
+<form class="flex items-center gap-1" role="search" data-compare-search-form>
+<label for="compare-search" class="sr-only">Legg til flere...</label>
+<input
+id="compare-search"
+type="search"
+autocomplete="off"
+class="default-input"
+placeholder="Legg til flere..."
+aria-controls="compare-search-results"
+data-compare-search-input
+data-autocomplete-url="https://godpris.no/api/product/search"
+/>
+<button type="submit" class="default-button-transition app-button-select app-button-select__default py-1.5 px-5">
+<span>Søk</span>
+</button>
+</form>
+<ul
+id="compare-search-results"
+aria-label="Søkeforslag"
+aria-live="polite"
+class="w-full flex-col gap-2 absolute left-0 top-full z-10 dark:bg-zinc-900 bg-white shadow-md p-4 md:w-96 hidden"
+data-compare-search-results
+></ul>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="overflow-x-auto" data-swap-loading>
+<table class="min-w-full border-separate border-spacing-y-1">
+<caption class="sr-only">Sammenlign produkter</caption>
+<thead>
+<tr class="text-left prop-group">
+<td class="sticky left-0 z-10 p-3 rounded-l-xl"></td>
+<th scope="col" class="p-3 pr-6 border-l-2 dark:border-zinc-800 align-top min-w-[60vw] md:min-w-[20rem]">
+<div class="flex flex-col gap-2 items-center">
+<div class="flex flex-col w-full">
+<div class="flex justify-end items-start">
+<a
+href="https://godpris.no/sammenlign?ids=1588920"
+class="default-button-transition app-button-select app-button-select__default size-icon inline-flex items-center justify-center"
+title="Fjern produkt"
+aria-label="Fjern produkt: Wilfa Innovac Aqua Plus HS1-SWB"
+data-swap-link
+>
+<svg class="w-5 h-5" aria-hidden="true"><use href="#icon-cross" /></svg>
+</a>
+</div>
+<a href="https://godpris.no/produkt/794250" title="Innovac Aqua Plus HS1-SWB" class="flex flex-col h-24">
+<span class="text-base font-semibold">Wilfa</span>
+<span class="text-xl">Innovac Aqua Plus HS1-SWB</span>
+</a>
+</div>
+<a href="https://godpris.no/produkt/794250" class="w-full h-24 bg-white p-1" tabindex="-1" aria-hidden="true">
+<img src="https://godpris.no/images/dynamic/1816896/1.jpeg?p=lg&amp;s=d80784f6ca81aa0a2997912d73666721" width="300" height="840" alt="" class="object-contain w-full h-full" loading="lazy" />
+</a>
+<div class="w-full font-normal">
+<span>kr 2 799</span>
+</div>
+</div>
+</th>
+<th scope="col" class="p-3 pr-6 border-l-2 dark:border-zinc-800 align-top min-w-[60vw] md:min-w-[20rem]">
+<div class="flex flex-col gap-2 items-center">
+<div class="flex flex-col w-full">
+<div class="flex justify-end items-start">
+<a
+href="https://godpris.no/sammenlign?ids=794250"
+class="default-button-transition app-button-select app-button-select__default size-icon inline-flex items-center justify-center"
+title="Fjern produkt"
+aria-label="Fjern produkt: Wilfa Probaker KM1B-70 Matt Black"
+data-swap-link
+>
+<svg class="w-5 h-5" aria-hidden="true"><use href="#icon-cross" /></svg>
+</a>
+</div>
+<a href="https://godpris.no/produkt/1588920" title="Probaker KM1B-70 Matt Black" class="flex flex-col h-24">
+<span class="text-base font-semibold">Wilfa</span>
+<span class="text-xl">Probaker KM1B-70 Matt Black</span>
+</a>
+</div>
+<a href="https://godpris.no/produkt/1588920" class="w-full h-24 bg-white p-1" tabindex="-1" aria-hidden="true">
+<img src="https://godpris.no/images/dynamic/185917/1.jpeg?p=lg&amp;s=cb7178731610e190bedec15ee268cd43" width="840" height="642" alt="" class="object-contain w-full h-full" loading="lazy" />
+</a>
+<div class="w-full font-normal">
+<span>kr 6 775</span>
+</div>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-left py-2 pt-6" colspan="3">
+<label for="diffCheckbox" class="text-lg pl-2 mr-2">Vis kun forskjeller</label>
+<input id="diffCheckbox" type="checkbox" class="default-checkbox" title="Kun forskjeller" data-compare-differences />
+</td>
+</tr>
+<tr class="odd:bg-zinc-100 dark:odd:bg-zinc-800">
+<th scope="colgroup" colspan="3" class="font-semibold pl-2 py-2 text-left">Egenskaper</th>
+</tr>
+<tr class="odd:bg-zinc-100 dark:odd:bg-zinc-900" >
+<th scope="row" class="pl-4 font-normal text-left">Støvbeholder</th>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+0.7
+<span class="numeric"> L</span>
+</span>
+</td>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+</span>
+</td>
+</tr>
+<tr class="odd:bg-zinc-100 dark:odd:bg-zinc-900" >
+<th scope="row" class="pl-4 font-normal text-left">Poseløs</th>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+<svg class="bool text-green-600 w-5 h-5" role="img" aria-label="Ja"><use href="/build/assets/sprite-f625c976.svg#icon-check" /></svg>
+</span>
+</td>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+<span class="sr-only">Ukjent</span>
+</span>
+</td>
+</tr>
+<tr class="odd:bg-zinc-100 dark:odd:bg-zinc-800">
+<th scope="colgroup" colspan="3" class="font-semibold pl-2 py-2 text-left">Funksjoner</th>
+</tr>
+<tr class="odd:bg-zinc-100 dark:odd:bg-zinc-900" >
+<th scope="row" class="pl-4 font-normal text-left">Munnstykke med lys</th>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+<svg class="bool text-green-600 w-5 h-5" role="img" aria-label="Ja"><use href="/build/assets/sprite-f625c976.svg#icon-check" /></svg>
+</span>
+</td>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+<span class="sr-only">Ukjent</span>
+</span>
+</td>
+</tr>
+<tr class="odd:bg-zinc-100 dark:odd:bg-zinc-900" >
+<th scope="row" class="pl-4 font-normal text-left">Moppefunksjon</th>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+<svg class="bool text-green-600 w-5 h-5" role="img" aria-label="Ja"><use href="/build/assets/sprite-f625c976.svg#icon-check" /></svg>
+</span>
+</td>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+<span class="sr-only">Ukjent</span>
+</span>
+</td>
+</tr>
+<tr class="odd:bg-zinc-100 dark:odd:bg-zinc-900" >
+<th scope="row" class="pl-4 font-normal text-left">Pulsfunksjon</th>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+<span class="sr-only">Ukjent</span>
+</span>
+</td>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+<svg class="bool text-green-600 w-5 h-5" role="img" aria-label="Ja"><use href="/build/assets/sprite-f625c976.svg#icon-check" /></svg>
+</span>
+</td>
+</tr>
+<tr class="odd:bg-zinc-100 dark:odd:bg-zinc-800">
+<th scope="colgroup" colspan="3" class="font-semibold pl-2 py-2 text-left">Energi</th>
+</tr>
+<tr class="odd:bg-zinc-100 dark:odd:bg-zinc-900" >
+<th scope="row" class="pl-4 font-normal text-left">Batteriteknologi</th>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+Lithium-Ion (Li-Ion)
+</span>
+</td>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+</span>
+</td>
+</tr>
+<tr class="odd:bg-zinc-100 dark:odd:bg-zinc-900" >
+<th scope="row" class="pl-4 font-normal text-left">Batteritid</th>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+60
+<span class="numeric"> min</span>
+</span>
+</td>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+</span>
+</td>
+</tr>
+<tr class="odd:bg-zinc-100 dark:odd:bg-zinc-900" >
+<th scope="row" class="pl-4 font-normal text-left">Ladetid</th>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+4
+<span class="numeric"> h</span>
+</span>
+</td>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+</span>
+</td>
+</tr>
+<tr class="odd:bg-zinc-100 dark:odd:bg-zinc-900" >
+<th scope="row" class="pl-4 font-normal text-left">Effekt</th>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+</span>
+</td>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+700
+<span class="numeric"> W</span>
+</span>
+</td>
+</tr>
+<tr class="odd:bg-zinc-100 dark:odd:bg-zinc-800">
+<th scope="colgroup" colspan="3" class="font-semibold pl-2 py-2 text-left">Vekt og dimensjoner</th>
+</tr>
+<tr class="odd:bg-zinc-100 dark:odd:bg-zinc-900" >
+<th scope="row" class="pl-4 font-normal text-left">Høyde</th>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+77
+<span class="numeric"> cm</span>
+</span>
+</td>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+36
+<span class="numeric"> cm</span>
+</span>
+</td>
+</tr>
+<tr class="odd:bg-zinc-100 dark:odd:bg-zinc-900" >
+<th scope="row" class="pl-4 font-normal text-left">Bredde</th>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+32.8
+<span class="numeric"> cm</span>
+</span>
+</td>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+25
+<span class="numeric"> cm</span>
+</span>
+</td>
+</tr>
+<tr class="odd:bg-zinc-100 dark:odd:bg-zinc-900" >
+<th scope="row" class="pl-4 font-normal text-left">Dybde</th>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+15.5
+<span class="numeric"> cm</span>
+</span>
+</td>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+42.5
+<span class="numeric"> cm</span>
+</span>
+</td>
+</tr>
+<tr class="odd:bg-zinc-100 dark:odd:bg-zinc-900" >
+<th scope="row" class="pl-4 font-normal text-left">Vekt</th>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+4.7
+<span class="numeric"> kg</span>
+</span>
+</td>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+13.4
+<span class="numeric"> kg</span>
+</span>
+</td>
+</tr>
+<tr class="odd:bg-zinc-100 dark:odd:bg-zinc-800">
+<th scope="colgroup" colspan="3" class="font-semibold pl-2 py-2 text-left">Generelt</th>
+</tr>
+<tr class="odd:bg-zinc-100 dark:odd:bg-zinc-900" >
+<th scope="row" class="pl-4 font-normal text-left">Hastigheter</th>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+</span>
+</td>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+20
+</span>
+</td>
+</tr>
+<tr class="odd:bg-zinc-100 dark:odd:bg-zinc-900" >
+<th scope="row" class="pl-4 font-normal text-left">Kapasitet</th>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+</span>
+</td>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+7
+<span class="numeric"> L</span>
+</span>
+</td>
+</tr>
+<tr class="odd:bg-zinc-100 dark:odd:bg-zinc-900" >
+<th scope="row" class="pl-4 font-normal text-left">Produsentfarge</th>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+</span>
+</td>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+Matt Black
+</span>
+</td>
+</tr>
+<tr class="odd:bg-zinc-100 dark:odd:bg-zinc-900" >
+<th scope="row" class="pl-4 font-normal text-left">Farge</th>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+</span>
+</td>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+Svart
+</span>
+</td>
+</tr>
+<tr class="odd:bg-zinc-100 dark:odd:bg-zinc-800">
+<th scope="colgroup" colspan="3" class="font-semibold pl-2 py-2 text-left">Materiale</th>
+</tr>
+<tr class="odd:bg-zinc-100 dark:odd:bg-zinc-900" >
+<th scope="row" class="pl-4 font-normal text-left">Materiale</th>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+</span>
+</td>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+Plast, Rustfritt stål
+</span>
+</td>
+</tr>
+<tr class="odd:bg-zinc-100 dark:odd:bg-zinc-800">
+<th scope="colgroup" colspan="3" class="font-semibold pl-2 py-2 text-left">Tilbehør</th>
+</tr>
+<tr class="odd:bg-zinc-100 dark:odd:bg-zinc-900" >
+<th scope="row" class="pl-4 font-normal text-left">Inkludert utstyr</th>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+</span>
+</td>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+Deigkrok, Visp, Sprutdeksel
+</span>
+</td>
+</tr>
+<tr class="odd:bg-zinc-100 dark:odd:bg-zinc-900" >
+<th scope="row" class="pl-4 font-normal text-left">Medfølgende boller/beholdere</th>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+</span>
+</td>
+<td class="p-2 border-l-2 dark:border-zinc-800">
+<span class="font-semibold">
+1
+<span class="numeric"> Stk</span>
+</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</main>
+</div>
+<div
+class="container container-padding flex flex-col align-items-start mt-4"
+data-recent-items
+></div>
+<div class="sr-only" aria-live="polite" aria-atomic="true" data-live-region></div>
+<dialog
+id="add-to-list-dialog"
+class="app-dialog" data-add-to-list-dialog="data-add-to-list-dialog" data-i18n="{&quot;add&quot;:&quot;Legg til&quot;,&quot;remove&quot;:&quot;Fjern&quot;,&quot;added&quot;:&quot;Lagt til i&quot;,&quot;removed&quot;:&quot;Fjernet fra&quot;,&quot;itemCountOne&quot;:&quot;:count vare&quot;,&quot;itemCountMany&quot;:&quot;:count varer&quot;,&quot;quantity&quot;:&quot;Antall i \u00ab:list\u00bb&quot;,&quot;decrease&quot;:&quot;F\u00e6rre i \u00ab:list\u00bb&quot;,&quot;increase&quot;:&quot;Flere i \u00ab:list\u00bb&quot;}" data-routes="{&quot;lists&quot;:&quot;https:\/\/godpris.no\/me\/api\/user\/lists&quot;,&quot;addItem&quot;:&quot;https:\/\/godpris.no\/me\/api\/lists\/__LIST__\/add\/__ITEM__&quot;,&quot;removeItem&quot;:&quot;https:\/\/godpris.no\/me\/api\/lists\/__LIST__\/remove\/__ITEM__&quot;,&quot;setQuantity&quot;:&quot;https:\/\/godpris.no\/me\/api\/lists\/__LIST__\/quantity\/__ITEM__&quot;,&quot;createList&quot;:&quot;https:\/\/godpris.no\/me\/api\/lists&quot;,&quot;showList&quot;:&quot;https:\/\/godpris.no\/me\/profil\/lister\/__LIST__&quot;}"
+aria-labelledby="add-to-list-dialog-title"
+data-account-dialog
+>
+<div class="p-8">
+<div class="flex gap-2 mb-6 items-center justify-between">
+<h2 id="add-to-list-dialog-title" class="text-3xl mb-0">
+<span class="flex items-center gap-2" data-dialog-title="main">
+Legg i liste
+<svg class="h-6 w-6 text-palette4-500" aria-hidden="true"><use href="/build/assets/sprite-f625c976.svg#icon-heart-outline" /></svg>
+</span>
+<span class="hidden items-center gap-2" data-dialog-title="signup">
+Lag bruker
+<svg class="h-6 w-6 text-palette4-500" aria-hidden="true"><use href="/build/assets/sprite-f625c976.svg#icon-person" /></svg>
+</span>
+<span class="hidden items-center gap-2" data-dialog-title="login">
+Logg inn
+<svg class="h-6 w-6 text-palette4-500" aria-hidden="true"><use href="/build/assets/sprite-f625c976.svg#icon-person" /></svg>
+</span>
+</h2>
+<button type="button" class="default-button-transition app-button__ghost inline-flex items-center justify-center h-6 w-6" aria-label="Lukk" data-dialog-close>
+<svg class="h-6 w-6" aria-hidden="true"><use href="#icon-cross" /></svg>
+</button>
+</div>
+<div class="hidden flex-col gap-4" data-dialog-view="main">
+<div class="flex flex-col gap-4" role="list" data-atl-lists></div>
+<form class="mt-2 flex flex-col gap-2" data-atl-create>
+<div class="flex flex-col gap-2 items-center mb-2"><hr class="w-1/2" /></div>
+<label for="atl-new-list">Lag ny liste</label>
+<div class="flex gap-2 items-center justify-between">
+<input id="atl-new-list" name="title" required class="default-input w-full flex-grow" placeholder="Navn på listen" />
+<button type="submit" class="default-button-transition app-button py-1.5 px-5 w-24 flex-shrink-0">
+<span>Legg til</span>
+</button>
+</div>
+</form>
+</div>
+<div class="hidden flex-col gap-4" data-dialog-view="unauthenticated">
+<span>Du må opprette bruker eller logge inn for å legge ting i handlelisten 😊</span>
+<div class="flex gap-4">
+<button type="button" class="default-button-transition app-button py-1.5 px-5 gtm-trigger-user-signup" data-dialog-goto="signup">
+<span>Opprett bruker</span>
+</button>
+<button type="button" class="default-button-transition app-button app-button__secondary py-1.5 px-5" data-dialog-goto="login">
+<span>Logg inn</span>
+</button>
+</div>
+</div>
+<form class="hidden flex-col gap-4" data-dialog-view="signup" data-auth-form="signup" data-action="https://godpris.no/me/api/user/signup" novalidate>
+<div class="flex flex-col gap-1">
+<label class="text-lg" for="add-to-list-dialog-signup-name">Navn</label>
+<input id="add-to-list-dialog-signup-name" name="name" type="text" autocapitalize="words" class="default-input w-full" placeholder="Ola Normann" />
+</div>
+<div class="flex flex-col gap-1">
+<label class="text-lg" for="add-to-list-dialog-signup-email">E-post</label>
+<input id="add-to-list-dialog-signup-email" aria-describedby="add-to-list-dialog-signup-email-error" name="email" type="email" autocapitalize="off" class="default-input w-full" placeholder="min@epost.no" />
+<span class="text-red-500" id="add-to-list-dialog-signup-email-error" data-auth-error="email"></span>
+</div>
+<div class="flex flex-col gap-1">
+<label class="text-lg" for="add-to-list-dialog-signup-password">Passord</label>
+<input id="add-to-list-dialog-signup-password" aria-describedby="add-to-list-dialog-signup-password-error" name="password" type="password" autocapitalize="off" class="default-input w-full" />
+<span class="text-red-500" id="add-to-list-dialog-signup-password-error" data-auth-error="password"></span>
+</div>
+<div class="flex gap-4 w-full items-center">
+<input id="add-to-list-dialog-signup-terms" name="terms" type="checkbox" class="default-checkbox" aria-describedby="add-to-list-dialog-signup-terms-error" />
+<label class="text-md" for="add-to-list-dialog-signup-terms">
+Jeg godtar Godpris.no sine
+<a href="https://godpris.no/personvern/brukervilkar" class="text-link">brukervilkår</a>.
+</label>
+</div>
+<span class="text-red-500" id="add-to-list-dialog-signup-terms-error" data-auth-error="terms"></span>
+<div class="mt-4 flex gap-2">
+<button type="submit" class="default-button-transition app-button py-1.5 px-5 gtm-trigger-user-signup">
+<span>Opprett bruker</span>
+</button>
+<button type="button" class="text-link underline-offset-4 hover:underline px-5" data-dialog-goto="unauthenticated">
+Tilbake
+</button>
+</div>
+</form>
+<form class="hidden flex-col gap-4" data-dialog-view="login" data-auth-form="login" data-action="https://godpris.no/me/api/user/login" novalidate>
+<div class="flex flex-col gap-1">
+<label class="text-lg" for="add-to-list-dialog-login-email">E-post</label>
+<input id="add-to-list-dialog-login-email" aria-describedby="add-to-list-dialog-login-email-error" name="email" type="email" autocapitalize="off" class="default-input w-full" placeholder="min@epost.no" />
+<span class="text-red-500" id="add-to-list-dialog-login-email-error" data-auth-error="email"></span>
+</div>
+<div class="flex flex-col gap-1">
+<label class="text-lg" for="add-to-list-dialog-login-password">Passord</label>
+<input id="add-to-list-dialog-login-password" aria-describedby="add-to-list-dialog-login-password-error" name="password" type="password" autocapitalize="off" class="default-input w-full" />
+<span class="text-red-500" id="add-to-list-dialog-login-password-error" data-auth-error="password"></span>
+</div>
+<div class="mt-4 flex gap-2">
+<button type="submit" class="default-button-transition app-button py-1.5 px-5">
+<span>Logg inn</span>
+</button>
+<button type="button" class="text-link underline-offset-4 hover:underline px-5" data-dialog-goto="unauthenticated">
+Tilbake
+</button>
+</div>
+</form>
+</div>
+</dialog>
+<footer class="app-footer">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Godpris","description":"Sammenlign priser på millioner av produkter i mer enn to tusen kategorier.","url":"https://godpris.no","potentialAction":{"@type":"SearchAction","target":"https://godpris.no/sok?q={search_term}","query-input":"required name=search_term"},"publisher":{"@type":"Organization","@id":"https://godpris.no/#organization","name":"Godpris AS"}}</script>
+<div class="wrapper">
+<div class="content-grid">
+<div class="cols">
+<div class="column">
+<span class="heading">Godpris</span>
+<a href="/om/godpris" class="hover:underline">Om oss</a>
+<a href="/om/presse" class="hover:underline">Presse</a>
+<a href="https://godpris.no/personvern/personvernerklaering" class="hover:underline">Personvernerklæring</a>
+<a href="https://godpris.no/personvern/informasjonskapsler" class="hover:underline">Informasjonskapsler (cookies)</a>
+<a href="/personvern/brukervilkar" class="hover:underline">Brukervilkår og retningslinjer</a>
+<a href="/butikk" class="hover:underline">Butikker</a>
+<a target="_blank" href="https://pricepoint.se" class="hover:underline">Pricepoint.se</a>
+<a target="_blank" href="https://discord.gg/XzrXwF5vTV" class="flex items-center gap-2 mt-2">
+<img alt="Discord-ikon" src="/icons/discord.svg" class="h-6 w-6" />
+<span class="hover:underline">Bli med på Discord!</span>
+</a>
+<div class="flex flex-col md:flex-row justify-center md:justify-start md:items-center gap-2 mt-2" data-hide-in-app>
+<div>
+<a
+href="https://play.google.com/store/apps/details?id=no.snev.app&utm_source=snev&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+target="_blank"
+rel="nofollow"
+>
+<img
+class="h-14 md:h-11 w-auto"
+alt="Last ned på Google Play"
+src="https://play.google.com/intl/en_us/badges/static/images/badges/no_badge_web_generic.png"
+loading="lazy"
+/>
+</a>
+</div>
+<div>
+<a
+href="https://apps.apple.com/no/app/snev-sjekk-pris-f%C3%B8r-kj%C3%B8p/id6498151104"
+target="_blank"
+rel="nofollow"
+>
+<img class="h-12 md:h-9" alt="Last ned fra App Store" src="/images/static/badges/apple/appstore-nb.svg" loading="lazy" />
+</a>
+</div>
+</div>
+</div>
+<div>
+<div class="column">
+<span class="heading">For butikker</span>
+<a class="hover:underline" href="/om/bli-med">Bli med</a>
+</div>
+<div class="column mt-9">
+<h2 class="heading mb-0">Aktuelt</h2>
+<div class="mt-1 flex flex-col gap-2">
+<a href="https://godpris.no/tilbud/black-friday">Black Friday</a>
+<a href="https://godpris.no/tilbud/singles-day">Singles Day</a>
+<a href="https://godpris.no/gavetips/1">Julegavetips</a>
+</div>
+</div>
+</div>
+</div>
+<div class="column">
+<div class="contribute">
+<div class="feedback">
+<button
+type="button"
+class="default-button-transition app-button py-1.5 px-5"
+aria-haspopup="dialog"
+data-feedback-open="https://godpris.no/api/services/feedback-form"
+>
+<span>Tips oss</span>
+</button>
+</div>
+<div class="theme-toggle">
+<div class="flex relative justify-start align-middle gap-2 text-black dark:text-white" role="group" aria-label="Fargetema" data-theme-toggle>
+<button type="button" title="Lyst tema" aria-label="Lyst tema" aria-pressed="false" class="default-button-transition app-button__outline size-icon" data-theme-value="light">
+<svg aria-hidden="true" class="h-[1.2rem] w-[1.2rem] rotate-0 dark:-rotate-90 opacity-40 dark:opacity-80"><use href="/build/assets/sprite-f625c976.svg#icon-sun" /></svg>
+</button>
+<button type="button" title="Mørkt tema" aria-label="Mørkt tema" aria-pressed="false" class="default-button-transition app-button__outline size-icon" data-theme-value="dark">
+<svg aria-hidden="true" class="absolute h-[1.2rem] w-[1.2rem] rotate-90 dark:rotate-0 opacity-40 dark:opacity-80"><use href="/build/assets/sprite-f625c976.svg#icon-moon" /></svg>
+</button>
+<button type="button" title="Bruk systeminnstilling" aria-label="Bruk systeminnstilling" aria-pressed="false" class="default-button-transition app-button__outline size-icon" data-theme-value="system">
+<svg aria-hidden="true" class="w-[1.2rem] h-[1.2rem] opacity-40 dark:opacity-80"><use href="/build/assets/sprite-f625c976.svg#icon-globe" /></svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="flex flex-col align-center justify-center mb-4">
+<p class="text-center mb-4">© Godpris AS 2026 | Haakon VIIs gate 6, 0161 Oslo, Norge | Org 930 985 570 MVA.</p>
+</div>
+</div>
+</div>
+</footer>
+<div class="hidden" role="region" aria-labelledby="consent-banner-heading" data-consent-banner>
+<div class="consent-banner">
+<div class="inner">
+<div class="content-wrapper">
+<span class="heading" id="consent-banner-heading">Vi byr på cookies 🍪</span>
+<span class="message">
+Godpris.no bruker
+<a class="consent-link" href="/personvern/informasjonskapsler" rel="nofollow">informasjonskapsler</a>
+for å gi deg en bedre brukeropplevelse, analysere trafikk og måle effekt av vår markedsføring. Ved å klikke på «Godta», samtykker du til vår bruk av informasjonskapsler.
+</span>
+</div>
+<div class="actions">
+<button type="button" class="default-button-transition app-button__outline py-1.5 px-5 font-semibold" data-consent="false">
+<span>Avvis</span>
+</button>
+<button type="button" class="default-button-transition app-button py-1.5 px-5 font-semibold" data-consent="true">
+<span>Godta</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<svg class="hidden" aria-hidden="true">
+<symbol
+id="icon-heart"
+width="100%"
+height="100%"
+viewBox="0 0 15 15"
+fill="none"
+xmlns="http://www.w3.org/2000/svg"
+>
+<path
+d="M4.9 2.35a2.55 2.55 0 0 0-2.55 2.56c0 1.49.85 2.99 2.02 4.43a39.86 39.86 0 0 0 3.13 3.14c.9-.81 2.1-1.9 3.13-3.14 1.16-1.42 2.02-2.96 2.02-4.43a2.55 2.55 0 0 0-2.54-2.56c-.84 0-1.3.3-1.57.6-.26.3-.4.64-.51.94l-.07.16a.5.5 0 0 1-.92 0l-.06-.16c-.13-.3-.26-.64-.52-.93-.28-.32-.73-.6-1.57-.6ZM1.35 4.91A3.55 3.55 0 0 1 4.9 1.35 2.93 2.93 0 0 1 7.5 2.7a2.93 2.93 0 0 1 2.6-1.33c1.96 0 3.55 1.58 3.55 3.55 0 1.83-1.05 3.6-2.25 5.06-1.14 1.39-2.48 2.58-3.4 3.4l-.17.15a.5.5 0 0 1-.66 0l-.18-.15c-.91-.82-2.25-2.01-3.4-3.4C2.4 8.5 1.36 6.74 1.36 4.9Z"
+fill="currentColor"
+/>
+</symbol>
+<symbol
+id="icon-heart-filled"
+width="100%"
+height="100%"
+viewBox="0 0 15 15"
+fill="none"
+xmlns="http://www.w3.org/2000/svg"
+>
+<path
+d="M1.35248 4.90532C1.35248 2.94498 2.936 1.35248 4.89346 1.35248C6.25769 1.35248 6.86058 1.92336 7.50002 2.93545C8.13946 1.92336 8.74235 1.35248 10.1066 1.35248C12.064 1.35248 13.6476 2.94498 13.6476 4.90532C13.6476 6.74041 12.6013 8.50508 11.4008 9.96927C10.2636 11.3562 8.92194 12.5508 8.00601 13.3664C7.94645 13.4194 7.88869 13.4709 7.83291 13.5206C7.64324 13.6899 7.3568 13.6899 7.16713 13.5206C7.11135 13.4709 7.05359 13.4194 6.99403 13.3664C6.0781 12.5508 4.73641 11.3562 3.59926 9.96927C2.39872 8.50508 1.35248 6.74041 1.35248 4.90532Z"
+fill="currentColor"
+/>
+</symbol>
+<symbol
+width="100%"
+height="100%"
+viewBox="0 0 15 15"
+fill="none"
+xmlns="http://www.w3.org/2000/svg"
+id="icon-chevron-up"
+>
+<path
+d="M3.13523 8.84197C3.3241 9.04343 3.64052 9.05363 3.84197 8.86477L7.5 5.43536L11.158 8.86477C11.3595 9.05363 11.6759 9.04343 11.8648 8.84197C12.0536 8.64051 12.0434 8.32409 11.842 8.13523L7.84197 4.38523C7.64964 4.20492 7.35036 4.20492 7.15803 4.38523L3.15803 8.13523C2.95657 8.32409 2.94637 8.64051 3.13523 8.84197Z"
+fill="currentColor"
+fill-rule="evenodd"
+clip-rule="evenodd"
+></path>
+</symbol>
+<symbol
+width="100%"
+height="100%"
+viewBox="0 0 15 15"
+fill="none"
+xmlns="http://www.w3.org/2000/svg"
+id="icon-chevron-down"
+>
+<path
+d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z"
+fill="currentColor"
+fill-rule="evenodd"
+clip-rule="evenodd"
+></path>
+</symbol>
+<symbol id="icon-magnifying-glass" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 6.5C10 8.433 8.433 10 6.5 10C4.567 10 3 8.433 3 6.5C3 4.567 4.567 3 6.5 3C8.433 3 10 4.567 10 6.5ZM9.30884 10.0159C8.53901 10.6318 7.56251 11 6.5 11C4.01472 11 2 8.98528 2 6.5C2 4.01472 4.01472 2 6.5 2C8.98528 2 11 4.01472 11 6.5C11 7.56251 10.6318 8.53901 10.0159 9.30884L12.8536 12.1464C13.0488 12.3417 13.0488 12.6583 12.8536 12.8536C12.6583 13.0488 12.3417 13.0488 12.1464 12.8536L9.30884 10.0159Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" />
+</symbol>
+<symbol id="icon-hamburger" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 3C1.22386 3 1 3.22386 1 3.5C1 3.77614 1.22386 4 1.5 4H13.5C13.7761 4 14 3.77614 14 3.5C14 3.22386 13.7761 3 13.5 3H1.5ZM1 7.5C1 7.22386 1.22386 7 1.5 7H13.5C13.7761 7 14 7.22386 14 7.5C14 7.77614 13.7761 8 13.5 8H1.5C1.22386 8 1 7.77614 1 7.5ZM1 11.5C1 11.2239 1.22386 11 1.5 11H13.5C13.7761 11 14 11.2239 14 11.5C14 11.7761 13.7761 12 13.5 12H1.5C1.22386 12 1 11.7761 1 11.5Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" />
+</symbol>
+<symbol id="icon-cross" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.7816 4.03157C12.0062 3.80702 12.0062 3.44295 11.7816 3.2184C11.5571 2.99385 11.193 2.99385 10.9685 3.2184L7.50005 6.68682L4.03164 3.2184C3.80708 2.99385 3.44301 2.99385 3.21846 3.2184C2.99391 3.44295 2.99391 3.80702 3.21846 4.03157L6.68688 7.49999L3.21846 10.9684C2.99391 11.193 2.99391 11.557 3.21846 11.7816C3.44301 12.0061 3.80708 12.0061 4.03164 11.7816L7.50005 8.31316L10.9685 11.7816C11.193 12.0061 11.5571 12.0061 11.7816 11.7816C12.0062 11.557 12.0062 11.193 11.7816 10.9684L8.31322 7.49999L11.7816 4.03157Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" />
+</symbol>
+<symbol id="icon-mixer-horizontal" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.5 3C4.67157 3 4 3.67157 4 4.5C4 5.32843 4.67157 6 5.5 6C6.32843 6 7 5.32843 7 4.5C7 3.67157 6.32843 3 5.5 3ZM3 5C3.01671 5 3.03323 4.99918 3.04952 4.99758C3.28022 6.1399 4.28967 7 5.5 7C6.71033 7 7.71978 6.1399 7.95048 4.99758C7.96677 4.99918 7.98329 5 8 5H13.5C13.7761 5 14 4.77614 14 4.5C14 4.22386 13.7761 4 13.5 4H8C7.98329 4 7.96677 4.00082 7.95048 4.00242C7.71978 2.86009 6.71033 2 5.5 2C4.28967 2 3.28022 2.86009 3.04952 4.00242C3.03323 4.00082 3.01671 4 3 4H1.5C1.22386 4 1 4.22386 1 4.5C1 4.77614 1.22386 5 1.5 5H3ZM11.9505 10.9976C11.7198 12.1399 10.7103 13 9.5 13C8.28967 13 7.28022 12.1399 7.04952 10.9976C7.03323 10.9992 7.01671 11 7 11H1.5C1.22386 11 1 10.7761 1 10.5C1 10.2239 1.22386 10 1.5 10H7C7.01671 10 7.03323 10.0008 7.04952 10.0024C7.28022 8.8601 8.28967 8 9.5 8C10.7103 8 11.7198 8.8601 11.9505 10.0024C11.9668 10.0008 11.9833 10 12 10H13.5C13.7761 10 14 10.2239 14 10.5C14 10.7761 13.7761 11 13.5 11H12C11.9833 11 11.9668 10.9992 11.9505 10.9976ZM8 10.5C8 9.67157 8.67157 9 9.5 9C10.3284 9 11 9.67157 11 10.5C11 11.3284 10.3284 12 9.5 12C8.67157 12 8 11.3284 8 10.5Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" />
+</symbol>
+<symbol id="icon-list" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 12h.01" />
+<path d="M3 18h.01" />
+<path d="M3 6h.01" />
+<path d="M8 12h13" />
+<path d="M8 18h13" />
+<path d="M8 6h13" />
+</symbol>
+<symbol id="icon-view-grid" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 2H1.5C1.22386 2 1 2.22386 1 2.5V7H7V2ZM8 2V7H14V2.5C14 2.22386 13.7761 2 13.5 2H8ZM7 8H1V12.5C1 12.7761 1.22386 13 1.5 13H7V8ZM8 13V8H14V12.5C14 12.7761 13.7761 13 13.5 13H8ZM1.5 1C0.671573 1 0 1.67157 0 2.5V12.5C0 13.3284 0.671573 14 1.5 14H13.5C14.3284 14 15 13.3284 15 12.5V2.5C15 1.67157 14.3284 1 13.5 1H1.5Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" />
+</symbol>
+</svg>
+</body>
+</html>
