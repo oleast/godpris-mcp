@@ -53,18 +53,27 @@ describe('get_deals', () => {
       arguments: { category_id: '449', shop: 'Elkjøp', discount_min: 20, record_low_only: true, sort: 'discount_desc' },
     });
     expect(res.isError).toBeFalsy();
-    const p = h.calls[0]!.searchParams;
+    const p = h.calls.at(-1)!.searchParams;
     expect(p.get('s')).toBe('discount_desc');
     expect(p.get('d_min')).toBe('20');
     expect(p.get('rekordbillig')).toBe('lowest_price');
     expect(p.get('c')).toBe('449');
-    expect(p.get('shop')).toBe('Elkjøp');
+    expect(p.get('shop')).toBe('231');
     expect(p.has('fragment')).toBe(false);
     const sc = res.structuredContent as { total?: number; items: Array<{ shop?: string; discount_pct?: number }>; has_next: boolean };
     expect(sc.total).toBe(184593);
     expect(sc.items).toHaveLength(48);
     expect(sc.items[0]).toMatchObject({ id: '17013290', shop: 'Kjell & Company', discount_pct: 51, price: 7489 });
     expect(sc.has_next).toBe(true);
+  });
+
+  it('returns no deals for a shop without current offers', async () => {
+    const h = await connectTools([{ path: '/tilbud', file: 'tilbud.html' }]);
+    close = h.close;
+    const res = await h.client.callTool({ name: 'get_deals', arguments: { shop: 'Bikeshop' } });
+    expect(res.isError).toBeFalsy();
+    expect(h.calls).toHaveLength(1);
+    expect((res.structuredContent as { items: unknown[] }).items).toEqual([]);
   });
 
   it('page 2 uses the fragment offset and a campaign path', async () => {

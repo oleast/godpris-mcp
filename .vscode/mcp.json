@@ -1,13 +1,9 @@
 {
   "servers": {
     "godpris": {
-      "type": "http",
-      "url": "http://127.0.0.1:3333/mcp"
-    },
-    "finn-mcp": {
       "type": "stdio",
-      "command": "npx",
-      "args": ["github:viktorfa/finn_mcp"]
+      "command": "node",
+      "args": ["${workspaceFolder}/dist/index.js"]
     }
   }
 }

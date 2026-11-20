@@ -1,8 +1,9 @@
 import { z } from 'zod';
 import { formatKr, markdownTable } from '../format.js';
+import { parseFilters } from '../parsers/filters.js';
 import { parseGiftRecipients } from '../parsers/gifts.js';
 import { parseListingMeta, parseProductTiles } from '../parsers/tiles.js';
-import type { Registration } from './index.js';
+import type { Registration, ToolContext } from './index.js';
 import {
   buildListingQuery,
   categoryIdInput,
@@ -60,6 +61,14 @@ function pagedQuery<Q extends Record<string, unknown>>(userQuery: Q, page: numbe
   return page > 1 ? { ...userQuery, o: (page - 1) * size, l: size, fragment: 1 } : userQuery;
 }
 
+/** The deals filter takes a shop id; names are looked up among the shops that have offers now. */
+async function findShopId(ctx: ToolContext, shop: string): Promise<string | undefined> {
+  if (/^\d+$/.test(shop)) return shop;
+  const filters = parseFilters(await ctx.client.getHtml('/tilbud')).filters;
+  const options = filters.find((f) => f.key === 'shop')?.options ?? [];
+  return options.find((o) => o.label.toLowerCase() === shop.toLowerCase())?.value;
+}
+
 export const registerDiscoverTools: Registration = (server, ctx) => {
   server.registerTool(
     'get_deals',
@@ -70,7 +79,7 @@ export const registerDiscoverTools: Registration = (server, ctx) => {
       inputSchema: {
         campaign: z.enum(CAMPAIGNS).optional().describe('Sales campaign page instead of all deals.'),
         category_id: categoryIdInput.optional(),
-        shop: z.string().trim().min(1).max(100).optional().describe('Only offers from this shop, e.g. "Elkjøp".'),
+        shop: z.string().trim().min(1).max(100).optional().describe('Only offers from this shop, by name (e.g. "Elkjøp") or store id. Shops without current offers return no deals.'),
         discount_min: z.coerce.number().int().min(0).max(100).optional().describe('Minimum discount in percent.'),
         price_min: priceMinInput,
         price_max: priceMaxInput,
@@ -95,10 +104,16 @@ export const registerDiscoverTools: Registration = (server, ctx) => {
         page: number;
       }) => {
         const warnings: string[] = [];
+        const shopId = args.shop ? await findShopId(ctx, args.shop) : undefined;
+        if (args.shop && !shopId) {
+          const url = siteUrl('/tilbud');
+          const paging = { page: args.page, has_next: false, total: 0 };
+          return finish(`No current offers from shop "${args.shop}".\n${url}`, dealsOutput, { url, ...paging, items: [] }, warnings);
+        }
         const userQuery = {
           ...buildListingQuery({ ...args, page: undefined }, warnings),
           ...(args.category_id ? { c: args.category_id } : {}),
-          ...(args.shop ? { shop: args.shop } : {}),
+          ...(shopId ? { shop: shopId } : {}),
         };
         const path = args.campaign ? `/tilbud/${args.campaign}` : '/tilbud';
         const url = siteUrl(path, userQuery);
